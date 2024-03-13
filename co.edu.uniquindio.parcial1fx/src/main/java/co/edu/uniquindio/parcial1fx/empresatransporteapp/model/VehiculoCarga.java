@@ -5,7 +5,7 @@ public class VehiculoCarga extends Vehiculo {
     private int numeroEjes;
 
 
-    public VehiculoCarga() {
+    public VehiculoCarga(double capacidadCarga, int numeroEjes) {
     }
 
     public VehiculoCarga(String placa, String modelo, String marca, String color, double capacidadcarga, int numeroEjes) {

@@ -1,6 +1,6 @@
 package co.edu.uniquindio.parcial1fx.empresatransporteapp.model;
 
-public abstract class Vehiculo {
+public class Vehiculo {
 
     private String placa;
     private String modelo;
