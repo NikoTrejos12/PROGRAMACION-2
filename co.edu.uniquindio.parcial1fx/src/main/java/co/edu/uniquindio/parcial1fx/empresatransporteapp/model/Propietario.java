@@ -15,7 +15,7 @@ public class Propietario {
     private List<VehiculoCarga> listaVehiculoAsociados = new ArrayList<>();
     private List<VehiculoPasajeros> listaUsuariosAsociados = new ArrayList<>();
 
-    public Propietario() {
+    public Propietario(String nombre, String cedula, String email, String celular) {
     }
 
     public Propietario(String nombre, String cedula, String email, String celular, Vehiculo vehiculo, List<VehiculoCarga> listaVehiculoAsociados, List<VehiculoPasajeros> listaUsuariosAsociados) {
