@@ -10,6 +10,7 @@ public class VehiculoPasajeros extends Vehiculo{
         return new VehiculoPasajerosBuilder();
     }
 
+
     public VehiculoPasajeros(String placa, String modelo, String marca, String color, int numeroMaximoPasajeros) {
         super(placa, modelo, marca, color);
         this.numeroMaximoPasajeros = numeroMaximoPasajeros;

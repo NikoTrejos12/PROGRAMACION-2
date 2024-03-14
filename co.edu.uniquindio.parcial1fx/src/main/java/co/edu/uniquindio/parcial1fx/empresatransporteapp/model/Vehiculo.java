@@ -13,6 +13,7 @@ public class Vehiculo  {
     private String color ;
     private Propietario propietarioAsociado;
     private List<Propietario> listaPropietariosAsociados = new ArrayList<>();
+    //se asocia con la clase usuaario
 
     public Vehiculo() {
     }
