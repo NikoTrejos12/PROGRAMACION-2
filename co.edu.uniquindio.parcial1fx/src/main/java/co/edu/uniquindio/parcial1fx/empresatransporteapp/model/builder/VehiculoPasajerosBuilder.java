@@ -2,7 +2,7 @@ package co.edu.uniquindio.parcial1fx.empresatransporteapp.model.builder;
 
 import co.edu.uniquindio.parcial1fx.empresatransporteapp.model.VehiculoPasajeros;
 
-public class VehiculoPasajerosBuilder {
+public class VehiculoPasajerosBuilder extends VehiculoBuilder {
 
     protected int numeroMaximoPasajeros;
 

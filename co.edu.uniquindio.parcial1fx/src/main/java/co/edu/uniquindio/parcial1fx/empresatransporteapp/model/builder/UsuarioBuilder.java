@@ -10,6 +10,11 @@ public class UsuarioBuilder {
     public UsuarioBuilder(int edad) {
         this.edad = edad;
     }
+
+    public UsuarioBuilder() {
+
+    }
+
     public Usuario build() {
         return new Usuario(edad);
     }

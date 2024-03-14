@@ -1,21 +1,31 @@
 package co.edu.uniquindio.parcial1fx.empresatransporteapp.model.builder;
 
+import co.edu.uniquindio.parcial1fx.empresatransporteapp.model.Vehiculo;
 import co.edu.uniquindio.parcial1fx.empresatransporteapp.model.VehiculoCarga;
 
-public class VehiculoCargaBuilder {
+public class VehiculoCargaBuilder extends VehiculoBuilder {
 
     protected double capacidadCarga;
     protected int numeroEjes;
 
-    public VehiculoCargaBuilder capacidadCarga (double capacidadCarga) {
-        this. capacidadCarga =  capacidadCarga;
-        return this;
+    public VehiculoCargaBuilder() {
     }
-    public VehiculoCargaBuilder numeroEjes (int numeroEjes ) {
-        this. numeroEjes  =  numeroEjes ;
-        return this;
+
+    public VehiculoCargaBuilder(double capacidadCarga, int numeroEjes) {
+        this.capacidadCarga = capacidadCarga;
+        this.numeroEjes = numeroEjes;
     }
-    public VehiculoCarga build(){
-        return new VehiculoCarga (capacidadCarga,numeroEjes);
+
+    public double getCapacidadCarga() {
+        return capacidadCarga;
     }
+    public int getNumeroEjes() {
+        return numeroEjes;
+    }
+    public VehiculoCarga build() {
+        return new VehiculoCarga(placa,modelo,marca,color,capacidadCarga,numeroEjes);
+   }
 }
+
+
+

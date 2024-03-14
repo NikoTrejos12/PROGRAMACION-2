@@ -9,6 +9,9 @@ public class VehiculoBuilder {
     protected String marca;
     protected String color;
 
+    public VehiculoBuilder() {
+    }
+
     public VehiculoBuilder placa(String placa) {
         this.placa = placa;
         return this;

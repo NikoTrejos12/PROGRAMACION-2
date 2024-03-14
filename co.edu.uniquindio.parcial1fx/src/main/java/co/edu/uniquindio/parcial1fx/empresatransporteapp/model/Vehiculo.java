@@ -1,13 +1,24 @@
 package co.edu.uniquindio.parcial1fx.empresatransporteapp.model;
 
-public class Vehiculo {
+import co.edu.uniquindio.parcial1fx.empresatransporteapp.model.builder.VehiculoBuilder;
+
+import java.util.ArrayList;
+import java.util.List;
+
+public class Vehiculo  {
 
     private String placa;
     private String modelo;
     private String marca;
     private String color ;
+    private Propietario propietarioAsociado;
+    private List<Propietario> listaPropietariosAsociados = new ArrayList<>();
 
     public Vehiculo() {
+    }
+
+    public static VehiculoBuilder builder(){
+        return new VehiculoBuilder();
     }
 
     public Vehiculo(String placa, String modelo, String marca, String color) {
@@ -27,26 +38,6 @@ public class Vehiculo {
 
     public String getMarca() {
         return marca;
-    }
-
-    public String getColor() {
-        return color;
-    }
-
-    public void setPlaca(String placa) {
-        this.placa = placa;
-    }
-
-    public void setModelo(String modelo) {
-        this.modelo = modelo;
-    }
-
-    public void setMarca(String marca) {
-        this.marca = marca;
-    }
-
-    public void setColor(String color) {
-        this.color = color;
     }
 
     @Override

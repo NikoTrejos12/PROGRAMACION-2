@@ -28,7 +28,6 @@ public class PropietarioBuilder {
     }
     public PropietarioBuilder celular (String celular) {
         this.celular= celular;
-
         return this;
     }
     public Propietario build(){
